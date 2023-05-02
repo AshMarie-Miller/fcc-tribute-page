@@ -1,0 +1,141 @@
+/* Layout */
+
+:root {
+    font-size:16px;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+main {
+    max-width:750px;
+    margin:0px auto;
+}
+
+section {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+section ul {
+    width:50%;
+}
+
+/* Typography */
+
+/* Headings */
+
+h1 {
+    font-family:"Sacramento", cursive;
+    font-weight:400;
+    font-size:3rem;
+    letter-spacing:-1px;
+    text-align:center;
+    color:#6e322e;
+}
+
+/* Paragraphs */
+
+#img-caption, footer p {
+    font-family:"Quicksand", sans-serif;
+    font-weight:300;
+    font-size:.875rem;
+    font-style:italic;
+    text-align:center;
+}
+
+#tribute-info {
+    font-family:"Quicksand", sans-serif;
+    font-weight:400;
+    font-size:1rem;
+    line-height:24px;
+    margin:8px 18px 0px 18px;
+}
+
+footer p {
+    margin-bottom:8px;
+}
+
+/* Lists */
+
+ul {
+    list-style-type:none;
+}
+
+li {
+    font-family:"Quicksand", sans-serif;
+    font-weight:400;
+    font-size:1rem;
+    line-height:24px;
+    margin:5% 2.5%;
+    padding:18px;
+    box-sizing:border-box;
+    background-color:#f2ece0;
+    position:relative;
+}
+
+ul:first-of-type li:nth-child(even) {
+    background-color:#e5cfbd;
+}
+
+ul:nth-of-type(2) li:nth-child(odd) {
+    background-color:#e5cfbd;
+}
+
+li span {
+    display:block;
+    font-weight:600;
+    color:#71322e;
+}
+
+li::before {
+    content:"\f004";
+    position:absolute;
+    left:-.75rem;
+    font-family:"Font Awesome 5 Free";
+    font-size:1.5rem;
+    color:#6e322e;
+    height:100%;
+    margin-top:-18px;
+    top:50%;
+}
+
+/* Links */
+
+a {
+    color:#6e322e;
+}
+
+/* Images */
+
+#image {
+    display:block;
+    max-width:250px;
+    margin:0px auto;
+}
+
+@media screen and (max-width:700px) {
+
+section {
+    margin-top:5%;
+}
+
+section ul {
+    width:100%;
+}
+
+li {
+    margin:0% 5% 5% 5%;
+}
+
+ul:nth-of-type(2) li:nth-child(odd) {
+    background-color:#f2ece0;
+}
+
+ul:nth-of-type(2) li:nth-child(even) {
+    background-color:#e5cfbd;
+}
+
+}
